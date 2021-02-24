@@ -1,5 +1,6 @@
 package Selenium_Java_Activities;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,6 +25,10 @@ public class Selenium_Activity_4_2 {
 		System.out.println("Title of the page: "+t);
 		b.click();
 		Thread.sleep(1000);
+		
+		Alert popup = driver.switchTo().alert();
+		popup.accept();
+		
 		driver.close();
 	}
 }
