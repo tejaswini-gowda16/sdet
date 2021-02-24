@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Selenium_Activity_9_2 {
-	public static void main(String args[]) throws InterruptedException {
+	public static void main(String args[]) {
 
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.training-support.net/selenium/selects");
