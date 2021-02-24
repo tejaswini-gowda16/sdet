@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Selenium_Activity_4_2 {
-	public static void main(String args[]) throws InterruptedException {
+	public static void main(String args[]) {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://training-support.net/selenium/simple-form");
 		String t = driver.getTitle();
@@ -24,7 +24,6 @@ public class Selenium_Activity_4_2 {
 		m.sendKeys("Selnium Testing");
 		System.out.println("Title of the page: "+t);
 		b.click();
-		Thread.sleep(1000);
 		
 		Alert popup = driver.switchTo().alert();
 		popup.accept();
